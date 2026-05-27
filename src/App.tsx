@@ -15,7 +15,7 @@ function App() {
       <CrossCursor />
       <MouseSpotlight />
       <LavaBackground />
-      <main className="min-h-screen relative z-0">
+      <main className="relative z-10 min-h-screen bg-transparent">
       <Navbar />
       <HeroSection />
       <ServicesSection />
