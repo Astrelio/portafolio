@@ -1,0 +1,260 @@
+@import "tailwindcss";
+
+:root {
+  font-family: "IBM Plex Sans", "Segoe UI", Roboto, Arial, sans-serif;
+  color: #c8cdd6;
+  background: #0a0a0b;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  border-radius: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: #0a0a0b;
+  color: #c8cdd6;
+}
+
+@media (pointer: fine) {
+  html.custom-cursor-active,
+  html.custom-cursor-active body,
+  html.custom-cursor-active a,
+  html.custom-cursor-active button,
+  html.custom-cursor-active [role='button'],
+  html.custom-cursor-active label,
+  html.custom-cursor-active summary {
+    cursor: none;
+  }
+}
+
+.cross-cursor {
+  position: fixed;
+  z-index: 9999;
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+  transition: opacity 120ms ease;
+  will-change: left, top;
+}
+
+.cross-cursor__arm {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cross-cursor__arm--spin {
+  animation: crossSpin 2.8s linear infinite;
+}
+
+.cross-cursor__line {
+  transition: stroke 220ms ease;
+}
+
+@keyframes crossSpin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+#root {
+  min-height: 100vh;
+}
+
+.section-shell {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-block: clamp(4rem, 12vh, 8rem);
+}
+
+.section-label {
+  font-family: "IBM Plex Mono", ui-monospace, monospace;
+  font-size: 0.6875rem;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: #6b7280;
+}
+
+.panel {
+  border: 1px solid #2a2d33;
+  background: #0f1012;
+}
+
+.panel-muted {
+  border: 1px solid #222428;
+  background: #0c0d0f;
+}
+
+.btn-primary,
+.btn-ghost {
+  position: relative;
+  overflow: hidden;
+  isolation: isolate;
+  transition:
+    color 260ms ease,
+    border-color 260ms ease,
+    letter-spacing 260ms ease,
+    transform 120ms ease;
+}
+
+.btn-primary::before,
+.btn-ghost::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  transform: translateX(-102%);
+  transition: transform 320ms cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.btn-primary::before {
+  background: #0a0a0b;
+}
+
+.btn-ghost::before {
+  background: #e8eaed;
+}
+
+.btn-primary:hover::before,
+.btn-ghost:hover::before {
+  transform: translateX(0);
+}
+
+.btn-primary:active,
+.btn-ghost:active {
+  transform: translateY(1px);
+}
+
+.btn-primary:focus-visible,
+.btn-ghost:focus-visible {
+  outline: 1px solid #e8eaed;
+  outline-offset: 3px;
+}
+
+.btn-primary svg,
+.btn-ghost svg {
+  transition: transform 260ms cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.btn-primary {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  border: 1px solid #e8eaed;
+  background: #e8eaed;
+  color: #0a0a0b;
+  padding: 0.875rem 1.5rem;
+  font-size: 0.8125rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.btn-primary:hover {
+  color: #f3f4f6;
+  letter-spacing: 0.07em;
+}
+
+.btn-primary:hover svg {
+  transform: translateX(5px);
+}
+
+.btn-ghost {
+  display: inline-flex;
+  align-items: center;
+  border: 1px solid #3d424a;
+  color: #d1d5db;
+  padding: 0.875rem 1.5rem;
+  font-size: 0.8125rem;
+  font-weight: 500;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.btn-ghost:hover {
+  border-color: #e8eaed;
+  color: #0a0a0b;
+  letter-spacing: 0.07em;
+}
+
+.nav-cta {
+  position: relative;
+  overflow: hidden;
+  isolation: isolate;
+  border: 1px solid #3d424a;
+  color: #d1d5db;
+  padding: 0.5rem 1rem;
+  font-family: "IBM Plex Mono", ui-monospace, monospace;
+  font-size: 0.625rem;
+  font-weight: 500;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  transition:
+    color 260ms ease,
+    border-color 260ms ease,
+    transform 120ms ease;
+}
+
+.nav-cta::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background: #e8eaed;
+  transform: scaleY(0);
+  transform-origin: bottom;
+  transition: transform 280ms cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.nav-cta:hover {
+  border-color: #e8eaed;
+  color: #0a0a0b;
+}
+
+.nav-cta:hover::before {
+  transform: scaleY(1);
+}
+
+.nav-cta:active {
+  transform: translateY(1px);
+}
+
+.nav-cta:focus-visible {
+  outline: 1px solid #e8eaed;
+  outline-offset: 3px;
+}
+
+.divide-y-sharp > * + * {
+  border-top: 1px solid #2a2d33;
+}
+
+.fade-up {
+  animation: fadeUp 600ms ease-out both;
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
