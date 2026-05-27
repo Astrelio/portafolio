@@ -2,6 +2,7 @@ import { Footer } from './components/layout/Footer'
 import { Navbar } from './components/layout/Navbar'
 import { CrossCursor } from './components/ui/CrossCursor'
 import { MouseSpotlight } from './components/ui/MouseSpotlight'
+import { LavaBackground } from './components/ui/LavaBackground'
 import { ContactSection } from './components/sections/ContactSection'
 import { HeroSection } from './components/sections/HeroSection'
 import { ProcessSection } from './components/sections/ProcessSection'
@@ -13,7 +14,8 @@ function App() {
     <>
       <CrossCursor />
       <MouseSpotlight />
-      <main className="min-h-screen bg-[#0a0a0b]">
+      <LavaBackground />
+      <main className="min-h-screen relative z-0">
       <Navbar />
       <HeroSection />
       <ServicesSection />

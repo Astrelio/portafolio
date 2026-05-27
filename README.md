@@ -24,8 +24,18 @@ src/
       ProjectsSection.tsx
       ProcessSection.tsx
       ContactSection.tsx
+    ui/
+      CrossCursor.tsx
+      MouseSpotlight.tsx
   data/
     content.ts
+  sprites/
+    personal/      # fotos personales
+    logos/         # logos propios y de clientes
+    projects/      # imagenes de proyectos
+    icons/         # iconos e imagenes pequenas
+    backgrounds/   # fondos y texturas
+    misc/          # otros assets
   App.tsx
   main.tsx
   index.css
