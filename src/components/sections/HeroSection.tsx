@@ -8,11 +8,10 @@ export function HeroSection() {
         <div className="max-w-4xl space-y-10">
           <p className="section-label">01 / Inicio</p>
           <h1 className="text-[clamp(2.25rem,5vw,4.5rem)] leading-[1.05] font-medium tracking-[-0.03em] text-[#f3f4f6]">
-            Diseno y desarrollo web para marcas tecnologicas que quieren escalar con claridad.
+            Hola, soy Cesar (Aka Astrelio).
           </h1>
           <p className="max-w-xl text-base leading-[1.75] text-[#9ca3af] md:text-lg">
-            Construyo experiencias digitales con enfoque en negocio: rendimiento, narrativa visual y conversion. Sin
-            ruido visual, solo interacciones que aportan valor.
+            Me apasiona construir soluciones integrales: desde el diseno estructurado de bases de datos y la arquitectura del backend, hasta la creacion de interfaces de usuario dinamicas en el frontend.
           </p>
           <div className="flex flex-wrap items-center gap-3 pt-2">
             <a href="#proyectos" className="btn-primary">

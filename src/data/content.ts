@@ -1,12 +1,16 @@
 import type { LucideIcon } from 'lucide-react'
-import { Blocks, Bot, ChartNoAxesCombined, ShieldCheck, Sparkles, Workflow } from 'lucide-react'
+import { AppWindow, Database, Cloud, Bot } from 'lucide-react'
+
+import pneuma1 from '../assets/pneuma/demo1.png'
+import pneuma2 from '../assets/pneuma/demo2.png'
+import pneuma3 from '../assets/pneuma/demo3.png'
 
 export type Metric = {
   label: string
   value: string
 }
 
-export type Service = {
+export type Skill = {
   title: string
   description: string
   icon: LucideIcon
@@ -16,13 +20,15 @@ export type Project = {
   title: string
   tag: string
   description: string
-  impact: string
+  technologies: string
+  technicalAchievement: string
+  images?: string[]
 }
 
 export const navLinks = [
-  { label: 'Servicios', href: '#servicios' },
+  { label: 'Acerca', href: '#acerca' },
+  { label: 'Habilidades', href: '#habilidades' },
   { label: 'Proyectos', href: '#proyectos' },
-  { label: 'Proceso', href: '#proceso' },
   { label: 'Contacto', href: '#contacto' },
 ]
 
@@ -32,64 +38,50 @@ export const metrics: Metric[] = [
   { label: 'Tiempo de lanzamiento', value: '4-6 semanas' },
 ]
 
-export const services: Service[] = [
+export const skills: Skill[] = [
   {
-    title: 'Landing pages de alto impacto',
-    description: 'Diseno y desarrollo orientado a metricas de negocio con enfoque mobile-first.',
-    icon: Sparkles,
+    title: 'Frontend y Desarrollo Movil',
+    description: 'Lenguajes: JavaScript, HTML5, CSS3. Frameworks y Herramientas: React DOM, React Native, Vite.',
+    icon: AppWindow,
   },
   {
-    title: 'Automatizacion de procesos',
-    description: 'Flujos que eliminan tareas repetitivas y conectan herramientas clave de tu operacion.',
-    icon: Workflow,
+    title: 'Backend y Arquitectura de Datos',
+    description: 'C#, Java, PHP. Motores: PostgreSQL, SQL Server, SQLite. BaaS: Supabase. Diseño estructurado y administracion etica.',
+    icon: Database,
   },
   {
-    title: 'Paneles y analitica',
-    description: 'Visualizacion clara de KPIs para decisiones rapidas y seguimiento de crecimiento.',
-    icon: ChartNoAxesCombined,
+    title: 'Cloud, Despliegue y Control',
+    description: 'Infraestructura y Hosting: Google Cloud, Vercel. Control de Versiones: Git, GitHub.',
+    icon: Cloud,
   },
   {
-    title: 'Arquitectura escalable',
-    description: 'Base tecnica preparada para crecimiento sin sacrificar rendimiento ni mantenibilidad.',
-    icon: Blocks,
+    title: 'Automatizacion e IA',
+    description: 'Orquestacion con n8n y Google Sheets. Integracion de IA, Prompt Engineering, Claude Code, Antigravity y Gemini 3 Pro-Coder.',
+    icon: Bot,
   },
 ]
 
 export const projects: Project[] = [
   {
-    title: 'Nova Hiring',
-    tag: 'SaaS / HR Tech',
-    description: 'Rediseno completo de sitio y funnel de demo para una startup de reclutamiento.',
-    impact: '+52% en leads calificados',
+    title: 'Pneuma Reach',
+    tag: 'Accesibilidad Tecnologica',
+    description: 'Sistema de control gestual interactivo mediante vision computacional, disenado para facilitar el uso del SO a personas con movilidad reducida.',
+    technologies: 'Python, OpenCV, MediaPipe.',
+    technicalAchievement: 'El mayor desafio fue adaptar la logica a la anatomia natural. Desarrolle un sistema que calcula dinamicamente el punto medio entre los dedos, aplique interpolacion para suavizar la sensibilidad y logre una herramienta intuitiva sin hardware costoso.',
+    images: [pneuma1, pneuma2, pneuma3],
   },
   {
-    title: 'Orbit Commerce',
-    tag: 'E-commerce Ops',
-    description: 'Plataforma interna para centralizar inventario, pedidos y alertas operativas.',
-    impact: '-31% de tiempo operativo',
+    title: 'Editorial Lumen',
+    tag: 'MVP y Diseno UI/UX',
+    description: 'Conceptualizacion, diseno UI/UX y desarrollo del MVP para la gestion de una plataforma editorial.',
+    technologies: 'ASP.NET Framework, Patron MVC, Supabase.',
+    technicalAchievement: 'Implementacion de una arquitectura de N-capas solida bajo el modelo MVC. Logre estructurar y separar de forma eficiente la logica de negocio, acceso a datos y la UI, garantizando un codigo ordenado y escalable.',
   },
   {
-    title: 'Pulse Health',
-    tag: 'HealthTech',
-    description: 'Portal institucional con arquitectura modular y SEO tecnico para mercado B2B.',
-    impact: '+44% trafico organico',
-  },
-]
-
-export const processSteps = [
-  {
-    title: 'Diagnostico estrategico',
-    description: 'Entiendo objetivos, contexto del negocio y necesidades reales de usuario.',
-    icon: Bot,
-  },
-  {
-    title: 'Diseno y validacion',
-    description: 'Propuesta visual con foco en claridad, jerarquia y conversion.',
-    icon: Sparkles,
-  },
-  {
-    title: 'Construccion y calidad',
-    description: 'Desarrollo con buenas practicas, rendimiento y accesibilidad desde el inicio.',
-    icon: ShieldCheck,
+    title: 'Mister PC Boteo',
+    tag: 'Gestion Operativa',
+    description: 'Aplicacion web a medida para digitalizar y optimizar las operaciones diarias de un negocio local de mantenimiento.',
+    technologies: 'PHP nativo, HTML/CSS.',
+    technicalAchievement: 'Desarrollo robusto sin depender de frameworks externos, disenando una arquitectura de directorios desde cero. Elimine la friccion del papeleo fisico, permitiendo consultar historiales de forma rapida y centralizada.',
   },
 ]

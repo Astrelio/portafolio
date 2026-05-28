@@ -5,9 +5,9 @@ import { MouseSpotlight } from './components/ui/MouseSpotlight'
 import { LavaBackground } from './components/ui/LavaBackground'
 import { ContactSection } from './components/sections/ContactSection'
 import { HeroSection } from './components/sections/HeroSection'
-import { ProcessSection } from './components/sections/ProcessSection'
+import { AboutSection } from './components/sections/AboutSection'
 import { ProjectsSection } from './components/sections/ProjectsSection'
-import { ServicesSection } from './components/sections/ServicesSection'
+import { SkillsSection } from './components/sections/SkillsSection'
 
 function App() {
   return (
@@ -15,12 +15,12 @@ function App() {
       <CrossCursor />
       <MouseSpotlight />
       <LavaBackground />
-      <main className="relative z-10 min-h-screen bg-transparent">
+      <main className="min-h-screen relative z-0">
       <Navbar />
       <HeroSection />
-      <ServicesSection />
+      <SkillsSection />
       <ProjectsSection />
-      <ProcessSection />
+      <AboutSection />
       <ContactSection />
       <Footer />
       </main>
