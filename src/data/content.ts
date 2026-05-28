@@ -34,6 +34,7 @@ export type Project = {
   technicalAchievement: string
   images?: string[]
   techIcons?: IconType[]
+  repoUrl?: string
 }
 
 export const navLinks = [
@@ -44,9 +45,9 @@ export const navLinks = [
 ]
 
 export const metrics: Metric[] = [
-  { label: 'Proyectos entregados', value: '24+' },
-  { label: 'Aumento promedio de conversion', value: '38%' },
-  { label: 'Tiempo de lanzamiento', value: '4-6 semanas' },
+  { label: 'Enfoque de Desarrollo', value: 'Full Stack' },
+  { label: 'Integracion de Modelos', value: 'IA Generativa' },
+  { label: 'Flujos Autonomos y n8n', value: 'Automatizacion' },
 ]
 
 export const skills: Skill[] = [
@@ -81,6 +82,7 @@ export const projects: Project[] = [
     technicalAchievement: 'El mayor desafio fue adaptar la logica a la anatomia natural. Desarrolle un sistema que calcula dinamicamente el punto medio entre los dedos, aplique interpolacion para suavizar la sensibilidad y logre una herramienta intuitiva sin hardware costoso.',
     images: [pneuma1, pneuma2, pneuma3],
     techIcons: [SiPython, SiOpencv],
+    repoUrl: 'https://github.com/Astrelio/Pneuma/tree/main',
   },
   {
     title: 'Editorial Lumen',
@@ -90,6 +92,7 @@ export const projects: Project[] = [
     technicalAchievement: 'Implementacion de una arquitectura de N-capas solida bajo el modelo MVC. Logre estructurar y separar de forma eficiente la logica de negocio, acceso a datos y la UI, garantizando un codigo ordenado y escalable.',
     images: [lumen1, lumen2, lumen3, lumen4],
     techIcons: [SiDotnet, SiSupabase],
+    repoUrl: 'https://github.com/Marelin2007/EditorialLibroLumen',
   },
   {
     title: 'Mister PC Boteo',
@@ -99,5 +102,6 @@ export const projects: Project[] = [
     technicalAchievement: 'Desarrollo robusto sin depender de frameworks externos, disenando una arquitectura de directorios desde cero. Elimine la friccion del papeleo fisico, permitiendo consultar historiales de forma rapida y centralizada.',
     images: [boteo1, boteo2],
     techIcons: [SiPhp, SiHtml5, SiCss],
+    repoUrl: 'https://github.com/dx-alas/mister-pc-boteo-platform',
   },
 ]

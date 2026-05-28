@@ -1,5 +1,6 @@
 import { projects } from '../../data/content'
 import { ImageCarousel } from '../ui/ImageCarousel'
+import { SiGithub } from 'react-icons/si'
 
 export function ProjectsSection() {
   return (
@@ -44,6 +45,20 @@ export function ProjectsSection() {
                   <p className="font-mono text-xs uppercase tracking-widest text-[#f3f4f6]">Logro Tecnico</p>
                   <p className="max-w-3xl text-sm leading-[1.8] text-[#9ca3af]">{project.technicalAchievement}</p>
                 </div>
+
+                {project.repoUrl && (
+                  <div className="pt-2">
+                    <a 
+                      href={project.repoUrl} 
+                      target="_blank" 
+                      rel="noopener noreferrer" 
+                      className="inline-flex items-center gap-2 text-sm font-mono tracking-wide text-[#f3f4f6] transition-colors hover:text-[#a78bfa]"
+                    >
+                      <SiGithub size={16} />
+                      <span className="border-b border-[#2a2d33] pb-0.5 hover:border-[#a78bfa]">Ver codigo fuente</span>
+                    </a>
+                  </div>
+                )}
 
                 {project.images && project.images.length > 0 && (
                   <div className="mt-10 pt-8 border-t border-[#2a2d33]">
