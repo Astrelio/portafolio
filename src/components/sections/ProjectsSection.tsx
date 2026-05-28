@@ -1,4 +1,5 @@
 import { projects } from '../../data/content'
+import { ImageCarousel } from '../ui/ImageCarousel'
 
 export function ProjectsSection() {
   return (
@@ -26,7 +27,16 @@ export function ProjectsSection() {
                 </div>
                 
                 <div className="space-y-2">
-                  <p className="font-mono text-xs uppercase tracking-widest text-[#f3f4f6]">Tecnologias</p>
+                  <div className="flex flex-wrap items-center gap-3">
+                    <p className="font-mono text-xs uppercase tracking-widest text-[#f3f4f6]">Tecnologias</p>
+                    {project.techIcons && (
+                      <div className="flex items-center gap-2 text-[#a78bfa]">
+                        {project.techIcons.map((Icon, i) => (
+                          <Icon key={i} size={16} title={Icon.name.replace('Si', '')} />
+                        ))}
+                      </div>
+                    )}
+                  </div>
                   <p className="max-w-3xl text-sm leading-[1.8] text-[#9ca3af]">{project.technologies}</p>
                 </div>
 
@@ -37,16 +47,7 @@ export function ProjectsSection() {
 
                 {project.images && project.images.length > 0 && (
                   <div className="mt-10 pt-8 border-t border-[#2a2d33]">
-                    <div className="flex gap-4 overflow-x-auto pb-6 pt-2 snap-x snap-mandatory [&::-webkit-scrollbar]:hidden [-ms-overflow-style:none] [scrollbar-width:none]">
-                      {project.images.map((img, i) => (
-                        <img
-                          key={i}
-                          src={img}
-                          alt={`${project.title} screenshot ${i + 1}`}
-                          className="h-48 md:h-64 w-auto rounded-sm border border-[#2a2d33] object-cover snap-start shrink-0"
-                        />
-                      ))}
-                    </div>
+                    <ImageCarousel images={project.images} title={project.title} />
                   </div>
                 )}
               </div>

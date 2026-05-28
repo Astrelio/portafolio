@@ -1,9 +1,19 @@
 import type { LucideIcon } from 'lucide-react'
 import { AppWindow, Database, Cloud, Bot } from 'lucide-react'
+import type { IconType } from 'react-icons'
+import { SiPython, SiOpencv, SiDotnet, SiSupabase, SiPhp, SiHtml5, SiCss } from 'react-icons/si'
 
 import pneuma1 from '../assets/pneuma/demo1.png'
 import pneuma2 from '../assets/pneuma/demo2.png'
 import pneuma3 from '../assets/pneuma/demo3.png'
+
+import lumen1 from '../assets/lumen/lumen home.png'
+import lumen2 from '../assets/lumen/lumen side bar.png'
+import lumen3 from '../assets/lumen/lounge.png'
+import lumen4 from '../assets/lumen/mascota.png'
+
+import boteo1 from '../assets/boteo/boteo1.png'
+import boteo2 from '../assets/boteo/boteo2.png'
 
 export type Metric = {
   label: string
@@ -23,6 +33,7 @@ export type Project = {
   technologies: string
   technicalAchievement: string
   images?: string[]
+  techIcons?: IconType[]
 }
 
 export const navLinks = [
@@ -69,6 +80,7 @@ export const projects: Project[] = [
     technologies: 'Python, OpenCV, MediaPipe.',
     technicalAchievement: 'El mayor desafio fue adaptar la logica a la anatomia natural. Desarrolle un sistema que calcula dinamicamente el punto medio entre los dedos, aplique interpolacion para suavizar la sensibilidad y logre una herramienta intuitiva sin hardware costoso.',
     images: [pneuma1, pneuma2, pneuma3],
+    techIcons: [SiPython, SiOpencv],
   },
   {
     title: 'Editorial Lumen',
@@ -76,6 +88,8 @@ export const projects: Project[] = [
     description: 'Conceptualizacion, diseno UI/UX y desarrollo del MVP para la gestion de una plataforma editorial.',
     technologies: 'ASP.NET Framework, Patron MVC, Supabase.',
     technicalAchievement: 'Implementacion de una arquitectura de N-capas solida bajo el modelo MVC. Logre estructurar y separar de forma eficiente la logica de negocio, acceso a datos y la UI, garantizando un codigo ordenado y escalable.',
+    images: [lumen1, lumen2, lumen3, lumen4],
+    techIcons: [SiDotnet, SiSupabase],
   },
   {
     title: 'Mister PC Boteo',
@@ -83,5 +97,7 @@ export const projects: Project[] = [
     description: 'Aplicacion web a medida para digitalizar y optimizar las operaciones diarias de un negocio local de mantenimiento.',
     technologies: 'PHP nativo, HTML/CSS.',
     technicalAchievement: 'Desarrollo robusto sin depender de frameworks externos, disenando una arquitectura de directorios desde cero. Elimine la friccion del papeleo fisico, permitiendo consultar historiales de forma rapida y centralizada.',
+    images: [boteo1, boteo2],
+    techIcons: [SiPhp, SiHtml5, SiCss],
   },
 ]
