@@ -19,7 +19,7 @@ export function ContactSection() {
               <a href="mailto:chavezram077@gmail.com" className="btn-primary">
                 chavezram077@gmail.com
               </a>
-              <a href="https://drive.google.com/file/d/17nvlULRwYQaSmtfMSU1ZkHFPTbK2rsoa/view?usp=sharing" target="_blank" rel="noopener noreferrer" className="btn-ghost">
+              <a href="https://drive.google.com/file/d/1uRYIjXjroP0GK7Xjykx1w82FaArZ89cl/view?usp=sharing" target="_blank" rel="noopener noreferrer" className="btn-ghost">
                 Descargar CV
               </a>
             </div>
