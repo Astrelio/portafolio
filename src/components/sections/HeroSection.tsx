@@ -8,10 +8,10 @@ export function HeroSection() {
         <div className="max-w-4xl flex flex-col">
           <p className="section-label mb-8">01 / Inicio</p>
           <h1 className="text-[clamp(2.25rem,5vw,4.5rem)] leading-[1.05] font-medium tracking-[-0.03em] text-[#f3f4f6] mb-6">
-            Hola, soy Cesar (Aka Astrelio).
+            Hola, soy César (Aka Astrelio).
           </h1>
           <p className="max-w-xl text-base leading-[1.75] text-[#9ca3af] md:text-lg mb-8">
-            Me apasiona construir soluciones integrales: desde el diseno estructurado de bases de datos y la arquitectura del backend, hasta la creacion de interfaces de usuario dinamicas en el frontend.
+            Me apasiona construir soluciones integrales: desde el diseño estructurado de bases de datos y la arquitectura del backend, hasta la creación de interfaces de usuario dinámicas en el frontend.
           </p>
           <div className="flex flex-wrap items-center gap-3">
             <a href="#proyectos" className="btn-primary">

@@ -29,7 +29,7 @@ export function ProjectsSection() {
                 
                 <div className="space-y-2">
                   <div className="flex flex-wrap items-center gap-3">
-                    <p className="font-mono text-xs uppercase tracking-widest text-[#f3f4f6]">Tecnologias</p>
+                    <p className="font-mono text-xs uppercase tracking-widest text-[#f3f4f6]">Tecnologías</p>
                     {project.techIcons && (
                       <div className="flex items-center gap-2 text-[#a78bfa]">
                         {project.techIcons.map((Icon, i) => (
@@ -42,7 +42,7 @@ export function ProjectsSection() {
                 </div>
 
                 <div className="space-y-2">
-                  <p className="font-mono text-xs uppercase tracking-widest text-[#f3f4f6]">Logro Tecnico</p>
+                  <p className="font-mono text-xs uppercase tracking-widest text-[#f3f4f6]">Logro Técnico</p>
                   <p className="max-w-3xl text-sm leading-[1.8] text-[#9ca3af]">{project.technicalAchievement}</p>
                 </div>
 
@@ -55,7 +55,7 @@ export function ProjectsSection() {
                       className="inline-flex items-center gap-2 text-sm font-mono tracking-wide text-[#f3f4f6] transition-colors hover:text-[#a78bfa]"
                     >
                       <SiGithub size={16} />
-                      <span className="border-b border-[#2a2d33] pb-0.5 hover:border-[#a78bfa]">Ver codigo fuente</span>
+                      <span className="border-b border-[#2a2d33] pb-0.5 hover:border-[#a78bfa]">Ver código fuente</span>
                     </a>
                   </div>
                 )}

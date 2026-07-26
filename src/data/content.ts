@@ -46,19 +46,19 @@ export const navLinks = [
 
 export const metrics: Metric[] = [
   { label: 'Enfoque de Desarrollo', value: 'Full Stack' },
-  { label: 'Integracion de Modelos', value: 'IA Generativa' },
-  { label: 'Flujos Autonomos y n8n', value: 'Automatizacion' },
+  { label: 'Integración de Modelos', value: 'IA Generativa' },
+  { label: 'Flujos Autónomos y n8n', value: 'Automatización' },
 ]
 
 export const skills: Skill[] = [
   {
-    title: 'Frontend y Desarrollo Movil',
+    title: 'Frontend y Desarrollo Móvil',
     description: 'Lenguajes: JavaScript, HTML5, CSS3. Frameworks y Herramientas: React DOM, React Native, Vite.',
     icon: AppWindow,
   },
   {
     title: 'Backend y Arquitectura de Datos',
-    description: 'C#, Java, PHP. Motores: PostgreSQL, SQL Server, SQLite. BaaS: Supabase. Diseño estructurado y administracion etica.',
+    description: 'C#, Java, PHP. Motores: PostgreSQL, SQL Server, SQLite. BaaS: Supabase. Diseño estructurado y administración ética.',
     icon: Database,
   },
   {
@@ -67,8 +67,8 @@ export const skills: Skill[] = [
     icon: Cloud,
   },
   {
-    title: 'Automatizacion e IA',
-    description: 'Orquestacion con n8n y Google Sheets. Integracion de IA, Prompt Engineering, Claude Code, Antigravity y Gemini 3 Pro-Coder.',
+    title: 'Automatización e IA',
+    description: 'Orquestación con n8n y Google Sheets. Integración de IA, Prompt Engineering, Claude Code, Antigravity y Gemini 3 Pro-Coder.',
     icon: Bot,
   },
 ]
@@ -76,30 +76,30 @@ export const skills: Skill[] = [
 export const projects: Project[] = [
   {
     title: 'Pneuma Reach',
-    tag: 'Accesibilidad Tecnologica',
-    description: 'Sistema de control gestual interactivo mediante vision computacional, disenado para facilitar el uso del SO a personas con movilidad reducida.',
+    tag: 'Accesibilidad Tecnológica',
+    description: 'Sistema de control gestual interactivo mediante visión computacional, diseñado para facilitar el uso del SO a personas con movilidad reducida.',
     technologies: 'Python, OpenCV, MediaPipe.',
-    technicalAchievement: 'El mayor desafio fue adaptar la logica a la anatomia natural. Desarrolle un sistema que calcula dinamicamente el punto medio entre los dedos, aplique interpolacion para suavizar la sensibilidad y logre una herramienta intuitiva sin hardware costoso.',
+    technicalAchievement: 'El mayor desafío fue adaptar la lógica a la anatomía natural. Desarrollé un sistema que calcula dinámicamente el punto medio entre los dedos, apliqué interpolación para suavizar la sensibilidad y logré una herramienta intuitiva sin hardware costoso.',
     images: [pneuma1, pneuma2, pneuma3],
     techIcons: [SiPython, SiOpencv],
     repoUrl: 'https://github.com/Astrelio/Pneuma/tree/main',
   },
   {
     title: 'Editorial Lumen',
-    tag: 'MVP y Diseno UI/UX',
-    description: 'Conceptualizacion, diseno UI/UX y desarrollo del MVP para la gestion de una plataforma editorial.',
-    technologies: 'ASP.NET Framework, Patron MVC, Supabase.',
-    technicalAchievement: 'Implementacion de una arquitectura de N-capas solida bajo el modelo MVC. Logre estructurar y separar de forma eficiente la logica de negocio, acceso a datos y la UI, garantizando un codigo ordenado y escalable.',
+    tag: 'MVP y Diseño UI/UX',
+    description: 'Conceptualización, diseño UI/UX y desarrollo del MVP para la gestión de una plataforma editorial.',
+    technologies: 'ASP.NET Framework, Patrón MVC, Supabase.',
+    technicalAchievement: 'Implementación de una arquitectura de N-capas sólida bajo el modelo MVC. Logré estructurar y separar de forma eficiente la lógica de negocio, acceso a datos y la UI, garantizando un código ordenado y escalable.',
     images: [lumen1, lumen2, lumen3, lumen4],
     techIcons: [SiDotnet, SiSupabase],
     repoUrl: 'https://github.com/Marelin2007/EditorialLibroLumen',
   },
   {
     title: 'Mister PC Boteo',
-    tag: 'Gestion Operativa',
-    description: 'Aplicacion web a medida para digitalizar y optimizar las operaciones diarias de un negocio local de mantenimiento.',
+    tag: 'Gestión Operativa',
+    description: 'Aplicación web a medida para digitalizar y optimizar las operaciones diarias de un negocio local de mantenimiento.',
     technologies: 'PHP nativo, HTML/CSS.',
-    technicalAchievement: 'Desarrollo robusto sin depender de frameworks externos, disenando una arquitectura de directorios desde cero. Elimine la friccion del papeleo fisico, permitiendo consultar historiales de forma rapida y centralizada.',
+    technicalAchievement: 'Desarrollo robusto sin depender de frameworks externos, diseñando una arquitectura de directorios desde cero. Eliminé la fricción del papeleo físico, permitiendo consultar historiales de forma rápida y centralizada.',
     images: [boteo1, boteo2],
     techIcons: [SiPhp, SiHtml5, SiCss],
     repoUrl: 'https://github.com/dx-alas/mister-pc-boteo-platform',

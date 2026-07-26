@@ -12,7 +12,7 @@ export function ContactSection() {
 
           <div className="flex flex-col justify-between px-6 py-14 md:px-10 md:py-20">
             <p className="max-w-md text-sm leading-[1.85] text-[#9ca3af] md:text-base">
-              Si te interesa mi perfil para un proyecto, colaboracion o posicion laboral, podemos agendar una llamada o puedes escribirme directamente a mi correo.
+              Si te interesa mi perfil para un proyecto, colaboración o posición laboral, podemos agendar una llamada o puedes escribirme directamente a mi correo.
             </p>
 
             <div className="mt-12 flex flex-col gap-3 sm:flex-row sm:flex-wrap">

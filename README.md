@@ -1,6 +1,6 @@
-# Portfolio Startup - Base
+# Portafolio Startup - Base
 
-Portafolio estilo startup tecnologica con diseno moderno, colores sobrios y animaciones minimas.
+Portafolio estilo startup tecnológica con diseño moderno, colores sobrios y animaciones mínimas.
 
 ## Stack
 
@@ -20,20 +20,22 @@ src/
       Footer.tsx
     sections/
       HeroSection.tsx
-      ServicesSection.tsx
+      SkillsSection.tsx
       ProjectsSection.tsx
-      ProcessSection.tsx
+      AboutSection.tsx
       ContactSection.tsx
     ui/
       CrossCursor.tsx
       MouseSpotlight.tsx
+      LavaBackground.tsx
+      ImageCarousel.tsx
   data/
     content.ts
   sprites/
     personal/      # fotos personales
     logos/         # logos propios y de clientes
-    projects/      # imagenes de proyectos
-    icons/         # iconos e imagenes pequenas
+    projects/      # imágenes de proyectos
+    icons/         # iconos e imágenes pequeñas
     backgrounds/   # fondos y texturas
     misc/          # otros assets
   App.tsx
@@ -44,12 +46,12 @@ src/
 ## Scripts
 
 - `npm run dev`: levanta entorno local
-- `npm run build`: build de produccion
+- `npm run build`: build de producción
 - `npm run preview`: previsualiza build
 - `npm run lint`: ejecuta eslint
 
-## Notas de diseno
+## Notas de diseño
 
 - Scroll vertical por bloques tipo landing startup.
-- Paleta de tonos frios y poco saturados.
+- Paleta de tonos fríos y poco saturados.
 - Animaciones ligeras (`fade-up` y micro-hover), evitando sobrecargar la interfaz.

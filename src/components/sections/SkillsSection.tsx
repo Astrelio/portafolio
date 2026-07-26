@@ -7,7 +7,7 @@ export function SkillsSection() {
         <div className="grid gap-8 border-b border-[#2a2d33] pb-12 md:grid-cols-[0.35fr_1fr] md:gap-16 md:pb-16">
           <p className="section-label">02 / Habilidades</p>
           <h2 className="max-w-3xl text-[clamp(1.75rem,3.5vw,3rem)] leading-[1.15] font-medium tracking-[-0.02em] text-[#f3f4f6]">
-            Mi caja de herramientas y tecnologias.
+            Mi caja de herramientas y tecnologías.
           </h2>
         </div>
 
